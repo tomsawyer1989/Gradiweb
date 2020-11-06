@@ -1,38 +1,196 @@
-.App {
-  text-align: center;
+body {
+    position: relative;
+    padding-bottom: 50px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+#sideTemp {
+    color: white;
+    background: rgb(109, 95, 187);
+    position: absolute;
+    top: 100px;
+    width: 90px;
+    height: 160px;
+    border-radius: 0px 35px 35px 0px;
+    box-shadow: 0px 10px 15px 5px #888888;
+    z-index: 1;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+#sideTemp #box1 {
+    padding: 10px;
+    height: 50%;
+    background: rgb(23, 23, 105);
+    border-radius: 0px 35px 35px 0px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+#sideTemp #box2 {
+    padding: 10px;
+    height: 50%;
+    background: rgb(109, 95, 187);
+    border-radius: 0px 0px 35px 0px;
 }
 
-.App-link {
-  color: #61dafb;
+#header {
+    color: rgb(109, 95, 187);
+    padding: 60px;
+    border-radius: 35px;
+    height: 250px;
+    background-image: url('./shared/imgs/bogota.jpg');
+    background-size: 160% 200%;
+    /* background: rgb(200, 190, 253); */
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.titleMenu {
+    font-size: 22px;
+}
+
+.menu {
+    height: 256px;
+    font-family: sans-serif;
+}
+
+.media {
+    height: 80px;
+    border-radius: 20px;
+    box-shadow: 0 0 7px 1px #cccccc;
+}
+
+.media-body {
+    padding-left: 12px;
+    padding-top: 18px;
+}
+
+.foreTemp {
+    color: white;
+    height: 100%;
+    padding-right: 7px;
+    padding-left: 7px;
+    padding-top: 28px;
+    border-radius: 20px;
+    background: rgb(109, 95, 187);
+}
+
+#placeVisit {
+    color: white;
+    padding: 12px;
+    height: 100%;
+    background: rgb(200, 190, 253);
+    border-radius: 35px;
+    box-shadow: 0 0 7px 1px #cccccc;
+    background-image: url('./shared/imgs/singapore2.jpg');
+    background-size: 150% 100%;
+}
+
+#topRev {
+    height: 30px;
+    border-radius: 6px;
+}
+
+.topRevItem {
+    padding: 3px;
+    color: white;
+    height: 100%;
+    background: rgb(200, 190, 253);
+    border-radius: 6px;
+}
+
+#topItem1 {
+    background-image: url('./shared/imgs/reviews1.jpg');
+    background-size: 100% 100%;
+}
+
+#topItem2 {
+    background-image: url('./shared/imgs/reviews2.jpg');
+    background-size: 100% 100%;
+}
+
+#topItem3 {
+    background-image: url('./shared/imgs/reviews3.jpg');
+    background-size: 100% 100%;
+}
+
+#place1 {
+    color: white;
+    padding: 12px;
+    height: 30%;
+    background: rgb(200, 190, 253);
+    border-radius: 35px;
+    box-shadow: 0 0 7px 1px #cccccc;
+    background-image: url('./shared/imgs/science.jpg');
+    background-size: 100% 220%;
+}
+
+#place2 {
+    color: white;
+    height: 62%;
+    background: rgb(200, 190, 253);
+    border-radius: 35px;
+    box-shadow: 0 0 7px 1px #cccccc;
+    background-image: url('./shared/imgs/fountain.jpg');
+    background-size: 100% 100%;
+}
+
+#buttonPlace2 {
+    height: 100%;
+    width: 70px;
+    border-radius: 35px;
+    color: white;
+    background: rgb(109, 95, 187);
+}
+
+#locations {
+    background: white;
+    height: 180px;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0 0 7px 1px #cccccc;
+}
+
+#imglocations {
+    margin-top: 15px;
+    height: 55%;
+    width: 100%;
+    background-image: url('./shared/imgs/locations.jpeg');
+    background-size: 100% 100%;
+}
+
+#buttonLocations {
+    background: #c1c2c2;
+    margin-top: 30px;
+    border-radius: 35px;
+}
+
+.itemLocation {
+    background: white;
+    height: 110px;
+    border-radius: 10px;
+    box-shadow: 0px 10px 15px 5px #888888;
+}
+
+.iconLoc {
+    padding-top: 10px;
+    background: rgb(212, 223, 233);
+    margin-left: 14px;
+    border-radius: 10px;
+}
+
+.footerItem {
+    color: #8C8E8F;
+    margin-left: 10px;
+    margin-top: 10px;
+}
+
+#boxAbsolute {
+    position: absolute;
+    width: 256px;
+    top: 160px;
+    right: 8%;
+    z-index: 1;
+}
+
+@media only screen and (max-width: 1142px) {
+    #boxAbsolute {
+        position: relative;
+        top: 0px;
+        right: 0px;
+    }
 }
